@@ -4,6 +4,7 @@
 #include "GameCharacterBase.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "AbilitySystemBlueprintLibrary.h"
 #include "GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h"
 
 // Sets default values
@@ -65,6 +66,7 @@ void AGameCharacterBase::PossessedBy(AController* NewController)
 	if (AbilitySystemComponent)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+		
 		GrantAbilities(StartingAbilities);
 	}
 }
@@ -102,7 +104,7 @@ TArray<FGameplayAbilitySpecHandle> AGameCharacterBase::GrantAbilities(
 		AbilityHandles.Add(SpecHandle);	
 	}
 	
-	
+	SendAbilitiesChangedEvent();
 	return AbilityHandles;
 }
 
@@ -117,5 +119,18 @@ void AGameCharacterBase::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> Abil
 	{
 		AbilitySystemComponent->ClearAbility(SpecHandle);
 	}
+	
+	SendAbilitiesChangedEvent();
+}
+
+void AGameCharacterBase::SendAbilitiesChangedEvent()
+{
+	FGameplayEventData EventData;
+	EventData.EventTag = FGameplayTag ::RequestGameplayTag(FName("Event.Abilities.Changed"));
+	
+	EventData.Instigator = this;
+	EventData.Target = this;
+	
+	UAbilitySystemBlueprintLibrary ::SendGameplayEventToActor(this, EventData.EventTag, EventData);
 }
 
