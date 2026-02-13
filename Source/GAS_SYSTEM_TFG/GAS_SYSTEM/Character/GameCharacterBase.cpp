@@ -65,6 +65,7 @@ void AGameCharacterBase::PossessedBy(AController* NewController)
 	if (AbilitySystemComponent)
 	{
 		AbilitySystemComponent->InitAbilityActorInfo(this, this);
+		GrantAbilities(StartingAbilities);
 	}
 }
 
@@ -80,5 +81,41 @@ void AGameCharacterBase::OnRep_PlayerState()
 UAbilitySystemComponent* AGameCharacterBase::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;	
+}
+
+TArray<FGameplayAbilitySpecHandle> AGameCharacterBase::GrantAbilities(
+	TArray<TSubclassOf<UGameplayAbility>> AbilitiesToGrant)
+{
+	if (!AbilitySystemComponent || !HasAuthority())
+	{
+		return TArray<FGameplayAbilitySpecHandle>();
+	}
+	
+	TArray<FGameplayAbilitySpecHandle> AbilityHandles;
+	
+	for ( TSubclassOf<UGameplayAbility> Ability : AbilitiesToGrant)
+	{
+		FGameplayAbilitySpecHandle SpecHandle = AbilitySystemComponent->GiveAbility(
+			FGameplayAbilitySpec(Ability, 1, -1, this
+				));
+		
+		AbilityHandles.Add(SpecHandle);	
+	}
+	
+	
+	return AbilityHandles;
+}
+
+void AGameCharacterBase::RemoveAbilities(TArray<FGameplayAbilitySpecHandle> AbilityHandlesToRemove)
+{
+	if (!AbilitySystemComponent || !HasAuthority())
+	{
+		return;
+	}
+	
+	for (FGameplayAbilitySpecHandle SpecHandle : AbilityHandlesToRemove)
+	{
+		AbilitySystemComponent->ClearAbility(SpecHandle);
+	}
 }
 
