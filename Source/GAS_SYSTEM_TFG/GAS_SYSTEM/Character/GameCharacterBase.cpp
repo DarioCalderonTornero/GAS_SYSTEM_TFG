@@ -5,6 +5,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "AbilitySystemBlueprintLibrary.h"
+#include "GAS_SYSTEM_TFG/GAS_SYSTEM/ExtendedAbilitySystemComponent.h"
 #include "GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h"
 
 // Sets default values
@@ -14,7 +15,7 @@ AGameCharacterBase::AGameCharacterBase()
 	PrimaryActorTick.bCanEverTick = true;
 
 	//Ability System Component
-	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
+	AbilitySystemComponent = CreateDefaultSubobject<UExtendedAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 	AbilitySystemComponent->SetIsReplicated((true));
 	AbilitySystemComponent->SetReplicationMode(AscReplicationMode);
 	
