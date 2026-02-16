@@ -43,7 +43,7 @@ void UExtendedAbilitySystemComponent::OnRep_ActivateAbilities()
 	{
 		for (int32 i = 0; i < LastActivableAbilities.Num(); ++i)
 		{ 
-			if (LastActivableAbilities[i].Ability != ActivatableAbilities.Items[i].Ability)
+			if (LastActivableAbilities[i].Ability != ActivatableAbilities.Items[i].Ability) 
 			{
 				bAbilitiesChanged = true;
 				break;
