@@ -12,8 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/AnimNotifies/ANState_HitscanWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/AnimNotifies/ANState_HitscanWindow.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/Axe/Montage_MeleeAttack_Axe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/Axe/Montage_MeleeAttack_Axe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_MeleeAttack_AxeSwing.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_MeleeAttack_AxeSwing.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Axe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Axe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/WeaponsManagerComponent.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/WeaponsManagerComponent.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +163,7 @@
       <workItem from="1771403748133" duration="605000" />
       <workItem from="1771412517614" duration="2781000" />
       <workItem from="1771446336656" duration="1488000" />
+      <workItem from="1771519640252" duration="906000" />
     </task>
     <servers />
   </component>
