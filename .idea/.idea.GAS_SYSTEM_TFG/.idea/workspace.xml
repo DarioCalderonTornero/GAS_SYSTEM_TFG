@@ -11,7 +11,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="" />
+    <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/Staff/Montage_Staff_ShootProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/Staff/Montage_Staff_ShootProjectile.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Data/DT_AbilityMetadata1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Data/DT_AbilityMetadata1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Projectiles/BP_ProjectileGreenFire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Projectiles/BP_ProjectileGreenFire.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Projectiles/BP_Projectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Projectiles/BP_Projectile_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Staff.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Staff.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Input/IMC_Default.uasset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,6 +170,7 @@
       <workItem from="1771769001939" duration="714000" />
       <workItem from="1771777675689" duration="969000" />
       <workItem from="1771790312533" duration="1648000" />
+      <workItem from="1771845430351" duration="2103000" />
     </task>
     <servers />
   </component>
