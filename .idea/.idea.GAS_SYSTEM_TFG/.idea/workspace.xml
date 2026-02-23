@@ -12,10 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/AnimNotifies/ANState_HitscanWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/AnimNotifies/ANState_HitscanWindow.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Animations/Axe/Montage_MeleeAttack_Axe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/Axe/Montage_MeleeAttack_Axe.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Base.uasset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +163,7 @@
       <workItem from="1771756242705" duration="1982000" />
       <workItem from="1771769001939" duration="714000" />
       <workItem from="1771777675689" duration="969000" />
+      <workItem from="1771790312533" duration="1648000" />
     </task>
     <servers />
   </component>
