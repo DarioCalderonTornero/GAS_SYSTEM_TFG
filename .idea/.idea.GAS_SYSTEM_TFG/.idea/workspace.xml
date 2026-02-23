@@ -11,11 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/Animations/AnimNotifies/ANState_HitscanWindow.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/AnimNotifies/ANState_HitscanWindow.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Animations/Axe/Montage_MeleeAttack_Axe.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Animations/Axe/Montage_MeleeAttack_Axe.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Weapons/BP/BP_Weapon_Base.uasset" afterDir="false" />
-    </list>
+    <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
