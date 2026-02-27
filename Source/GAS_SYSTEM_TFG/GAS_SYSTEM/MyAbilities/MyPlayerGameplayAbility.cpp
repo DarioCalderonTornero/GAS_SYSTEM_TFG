@@ -2,3 +2,8 @@
 
 
 #include "MyPlayerGameplayAbility.h"
+
+UMyPlayerGameplayAbility::UMyPlayerGameplayAbility()
+{
+	ActivationOwnedTags.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.Active")));
+}

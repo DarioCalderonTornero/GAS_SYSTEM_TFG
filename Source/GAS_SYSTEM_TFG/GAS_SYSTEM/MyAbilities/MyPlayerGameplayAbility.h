@@ -14,6 +14,8 @@ class GAS_SYSTEM_TFG_API UMyPlayerGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
 	
+	UMyPlayerGameplayAbility();
+	
 public: 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	bool bShouldShowAbilityBar = false;
