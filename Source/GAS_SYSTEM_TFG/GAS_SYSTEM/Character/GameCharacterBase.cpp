@@ -38,13 +38,16 @@ AGameCharacterBase::AGameCharacterBase()
 	
 	//Add attribute set
 	BasicAttributeSet = CreateDefaultSubobject<UBasicAttributeSet>(TEXT("BasicAttributeSet"));
+	
+	
 }
 
 // Called when the game starts or when spawned
 void AGameCharacterBase::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	AbilitySystemComponent->RegisterGameplayTagEvent(FGameplayTag::RequestGameplayTag("State.Death"))
+	.AddUObject(this, &AGameCharacterBase::OnDeadTagChanged);
 }
 
 // Called every frame
@@ -138,5 +141,29 @@ void AGameCharacterBase::SendAbilitiesChangedEvent()
 void AGameCharacterBase::ServerSendGameplayEventToSelf_Implementation(FGameplayEventData EventData)
 {
 	UAbilitySystemBlueprintLibrary ::SendGameplayEventToActor(this, EventData.EventTag, EventData);
+}
+
+void AGameCharacterBase::HandleDeath_Implementation()
+{
+	//Simulate Death
+	GetMesh()->SetSimulatePhysics(true);
+	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);	
+	GetCharacterMovement()->DisableMovement();
+	
+	//Add extra force
+	float ImpulseStrength = -20000.f;
+	FVector ImpulseVector = GetActorForwardVector() * ImpulseStrength;	
+	ImpulseVector.Z = 15000.f;
+	
+	GetMesh()->AddImpulseAtLocation(ImpulseVector, GetActorLocation());
+}
+
+void AGameCharacterBase::OnDeadTagChanged(const FGameplayTag CallbackTag, int32 NewCount)
+{
+	if (NewCount > 0)
+	{
+		HandleDeath();
+	}
 }
 
