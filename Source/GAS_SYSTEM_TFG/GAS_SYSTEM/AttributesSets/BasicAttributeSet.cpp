@@ -46,9 +46,14 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	{
 		SetHealth(GetHealth());	
 		
-		FGameplayTagContainer HitReactionTagContainer;
-		HitReactionTagContainer.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
-		GetOwningAbilitySystemComponent()-> TryActivateAbilitiesByTag(HitReactionTagContainer);
+		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag("Effect.HitReaction")))
+		{
+			FGameplayTagContainer HitReactionTagContainer;
+			HitReactionTagContainer.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
+			GetOwningAbilitySystemComponent()-> TryActivateAbilitiesByTag(HitReactionTagContainer);
+		}
+		
+		
 	}
 	else if (Data.EvaluatedData.Attribute == GetStaminaAttribute())
 	{
