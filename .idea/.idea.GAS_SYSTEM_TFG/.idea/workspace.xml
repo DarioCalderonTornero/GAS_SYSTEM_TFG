@@ -13,13 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_Death.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_Death.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_EquipWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_EquipWeapon.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Player.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/Character/GameCharacterBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +174,8 @@
       <workItem from="1774977619738" duration="318000" />
       <workItem from="1775489616769" duration="2079000" />
       <workItem from="1775495525133" duration="4669000" />
+      <workItem from="1775506477273" duration="1787000" />
+      <workItem from="1775562373413" duration="1063000" />
     </task>
     <servers />
   </component>
