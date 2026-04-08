@@ -19,6 +19,8 @@ class GAS_SYSTEM_TFG_API UMyPlayerGameplayAbility : public UGameplayAbility
 public: 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
 	bool bShouldShowAbilityBar = false;
-		
 	
+private:
+	UFUNCTION(BlueprintCallable, Category = "Helpers")
+	bool HasPlayerController() const;
 };
