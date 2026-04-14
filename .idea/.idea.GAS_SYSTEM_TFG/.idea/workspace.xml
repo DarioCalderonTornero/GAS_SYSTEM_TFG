@@ -13,10 +13,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_MeleeAtack_AxeCombo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_MeleeAtack_AxeCombo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_Defense_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_Defense_Shield.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageGameplayModMagnitudeCalculation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageGameplayModMagnitudeCalculation.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_DefenseShield_Cooldown.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_DefenseShield_Cooldown.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_Shield.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +181,7 @@
       <workItem from="1775562373413" duration="1063000" />
       <workItem from="1775569088795" duration="1440000" />
       <workItem from="1775658717583" duration="1697000" />
+      <workItem from="1776161849795" duration="3609000" />
     </task>
     <servers />
   </component>
