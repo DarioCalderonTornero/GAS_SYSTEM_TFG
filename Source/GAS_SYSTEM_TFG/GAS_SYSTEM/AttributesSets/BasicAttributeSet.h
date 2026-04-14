@@ -18,6 +18,7 @@ class GAS_SYSTEM_TFG_API UBasicAttributeSet : public UAttributeSet
 public:
 	UBasicAttributeSet();
 	
+	//Health Attributes
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes", ReplicatedUsing = OnRep_Health)
 	FGameplayAttributeData Health;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Health);
@@ -26,6 +27,7 @@ public:
 	FGameplayAttributeData MaxHealth;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxHealth);
 	
+	//Stamina Attributes	
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes", ReplicatedUsing = OnRep_Stamina)
 	FGameplayAttributeData Stamina;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Stamina);
@@ -34,9 +36,19 @@ public:
 	FGameplayAttributeData MaxStamina;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxStamina);
 	
+	//Damage Attribute
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData Damage;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Damage); 
+	
+	//Health Attributes
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes", ReplicatedUsing = OnRep_Shield)
+	FGameplayAttributeData Shield;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Shield);
+	
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes", ReplicatedUsing = OnRep_MaxShield)
+	FGameplayAttributeData MaxShield;
+	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, MaxShield);
 	
 public:
 	UFUNCTION()
@@ -61,6 +73,18 @@ public:
 	void OnRep_MaxStamina(const FGameplayAttributeData& OldValue) const
 	{
 		GAMEPLAYATTRIBUTE_REPNOTIFY(UBasicAttributeSet, MaxStamina, OldValue);
+	}
+	
+	UFUNCTION()
+	void OnRep_Shield(const FGameplayAttributeData& OldValue) const
+	{
+		GAMEPLAYATTRIBUTE_REPNOTIFY(UBasicAttributeSet, Shield, OldValue);
+	}
+	
+	UFUNCTION()
+	void OnRep_MaxShield(const FGameplayAttributeData& OldValue) const
+	{
+		GAMEPLAYATTRIBUTE_REPNOTIFY(UBasicAttributeSet, MaxShield, OldValue);
 	}
 	
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;

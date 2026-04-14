@@ -13,10 +13,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_Defense_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_Defense_Shield.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageGameplayModMagnitudeCalculation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageGameplayModMagnitudeCalculation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_DefenseShield_Cooldown.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_DefenseShield_Cooldown.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_Shield.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_AOEAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_AOEAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_MeleeAttack_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_MeleeAttack_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_ShootProjectile_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_ShootProjectile_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/EffectActors/BP_EffectArea_Damage.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_DamageOverTime_Infinite.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_DamageOverTime_Infinite.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/WeaponEffects/GE_DamageInstance.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/WeaponEffects/GE_DamageInstance.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" afterDir="false" />
     </list>
@@ -35,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/MyAbilities/MyPlayerGameplayAbility.h" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -182,12 +186,14 @@
       <workItem from="1775569088795" duration="1440000" />
       <workItem from="1775658717583" duration="1697000" />
       <workItem from="1776161849795" duration="3609000" />
+      <workItem from="1776171781121" duration="1201000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

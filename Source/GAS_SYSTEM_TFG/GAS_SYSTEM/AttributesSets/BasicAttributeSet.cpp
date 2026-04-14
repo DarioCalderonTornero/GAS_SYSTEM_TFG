@@ -12,6 +12,8 @@ UBasicAttributeSet::UBasicAttributeSet()
 	Stamina = 100.f;
 	MaxStamina = 100.f;
 	Damage = 0.f;
+	Shield = 0.f;
+	MaxShield = 100.f;
 }
 
 // Replication of attributes with notification on change.
@@ -37,15 +39,23 @@ void UBasicAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute,
 	{
 		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxStamina());
 	}
+	
+	else if (Attribute == GetShieldAttribute())
+	{
+		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxShield());
+	}
 }
 
 void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbackData& Data)
 {
 	Super::PostGameplayEffectExecute(Data);
 	
-	if (Data.EvaluatedData.Attribute == GetHealthAttribute())
+	if (Data.EvaluatedData.Attribute == GetDamageAttribute())
 	{
-		SetHealth(GetHealth());	
+		float TotalDamage = GetDamage();	
+		
+		SetDamage(0.f);
+		SetHealth(GetHealth() - TotalDamage);
 		
 		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag("Effect.HitReaction"))
 			&& Data.EvaluatedData.Magnitude != 0.f)
@@ -54,8 +64,11 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 			HitReactionTagContainer.AddTag(FGameplayTag::RequestGameplayTag(FName("GameplayAbility.HitReaction")));
 			GetOwningAbilitySystemComponent()-> TryActivateAbilitiesByTag(HitReactionTagContainer);
 		}
-		
-		
+	}
+	
+	if (Data.EvaluatedData.Attribute == GetHealthAttribute())
+	{
+		SetHealth(GetHealth());	
 	}
 	else if (Data.EvaluatedData.Attribute == GetStaminaAttribute())
 	{
