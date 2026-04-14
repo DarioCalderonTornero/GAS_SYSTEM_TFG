@@ -52,10 +52,26 @@ void UBasicAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallb
 	
 	if (Data.EvaluatedData.Attribute == GetDamageAttribute())
 	{
-		float TotalDamage = GetDamage();	
-		
+		float TotalDamage = GetDamage();
 		SetDamage(0.f);
-		SetHealth(GetHealth() - TotalDamage);
+
+		float CurrentShield = GetShield();
+		if (CurrentShield > 0.f)
+		{
+			float ShieldAbsorbed = FMath::Min(CurrentShield, TotalDamage);
+			SetShield(FMath::Max(0.f, CurrentShield - TotalDamage));
+			float DamageRemaining = TotalDamage - ShieldAbsorbed;
+			if (DamageRemaining > 0.f)
+			{
+				SetHealth(FMath::Max(0.f, GetHealth() - DamageRemaining));
+			}
+		}
+		else
+		{
+			SetHealth(FMath::Max(0.f, GetHealth() - TotalDamage));
+		
+		}
+		
 		
 		if (Data.EffectSpec.Def->GetAssetTags().HasTag(FGameplayTag::RequestGameplayTag("Effect.HitReaction"))
 			&& Data.EvaluatedData.Magnitude != 0.f)
