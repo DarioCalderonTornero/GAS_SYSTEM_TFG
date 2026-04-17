@@ -41,7 +41,7 @@ public:
 	FGameplayAttributeData Damage;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Damage); 
 	
-	//Health Attributes
+	//Shield Attributes
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes", ReplicatedUsing = OnRep_Shield)
 	FGameplayAttributeData Shield;
 	ATTRIBUTE_ACCESSORS_BASIC(UBasicAttributeSet, Shield);
