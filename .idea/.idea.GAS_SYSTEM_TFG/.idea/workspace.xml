@@ -12,16 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d22fa3d-9335-42f1-8acf-897a1d4d9a2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_FillShield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Abilities/GA_FillShield.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Characters/BP_Enemy_Base.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/CurveTables/CurveTable_GameplayEffect.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageGameplayModMagnitudeCalculation.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/DamageGameplayModMagnitudeCalculation.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_Shield.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Effects/GE_Shield.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameplayAbilitySystem/Widgets/W_Enemy_HealthBar.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/W_EnemyArmorBar.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/W_EnemyAvatar.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Widgets/Enemy/W_EnemyHealthBar.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GAS_SYSTEM_TFG/GAS_SYSTEM/AttributesSets/BasicAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GAS_SYSTEM_TFG/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +181,7 @@
       <workItem from="1776191391159" duration="2571000" />
       <workItem from="1776209093996" duration="402000" />
       <workItem from="1776413397931" duration="3500000" />
+      <workItem from="1778859115038" duration="2039000" />
     </task>
     <servers />
   </component>
